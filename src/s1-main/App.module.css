@@ -1,0 +1,17 @@
+.App {
+    --header_height: 60px;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #212A34;
+    color: #FFFFFF;
+    font-family:  Montserrat;
+}
+
+.hw {
+    font-size: 30px;
+}
+
+.hwTitle {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
