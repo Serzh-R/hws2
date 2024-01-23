@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {pureAddUser} from '../GreetingContainer'
 
 let name: any
