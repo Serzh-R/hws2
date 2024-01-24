@@ -27,6 +27,7 @@ const Greeting: React.FC<GreetingPropsType> = (
 ) => {
     /*const inputClass = s.errorInput // need to fix with (?:)*/
     const inputClass = error ? s.errorInput : s.normalInput;
+    console.log(error)
 
     return (
         <div id={'hw3-form'} className={s.greetingForm}>
@@ -47,11 +48,9 @@ const Greeting: React.FC<GreetingPropsType> = (
                         onKeyDown={onEnter}
                         onBlur={onBlur}
                     />
-                    {
-                        error && <div id={'hw3-error'} className={s.error}>
-                            {error}
-                        </div>
-                    }
+                    <div id={'hw3-error'} className={s.error}>
+                        {error}
+                    </div>
 
                 </div>
 
