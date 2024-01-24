@@ -1,10 +1,12 @@
 .greetingForm {
+    
 }
 
 .inputAndButtonContainer {
 }
 
 .error {
+    color: red;
 
 }
 
@@ -15,6 +17,7 @@
 }
 
 .errorInput {
+    color: red;
 }
 
 .button {
