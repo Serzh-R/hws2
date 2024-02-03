@@ -1,16 +1,24 @@
 .button {
+    width: 130px;
+    height: 30px;
+    background-color: #0059b2;
+    color: #fff;
 }
 
 .disabled {
+    background-color: #CC1439;
 }
 
 .secondary {
+    background-color: #66798c;
 }
 
 .default {
+    background-color: #0066CC;
 }
 
 .red {
+    background-color: #CC1439;
 }
 
 .default:hover {

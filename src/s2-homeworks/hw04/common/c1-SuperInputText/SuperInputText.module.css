@@ -2,19 +2,37 @@
 }
 
 .input {
+    width: 370px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid grey;
 }
 
 .inputWrapper {
 }
 
 .superInput {
+    background-color: #00cc22;
 }
 
 .errorInput {
+    border: 1px solid #daea08;
+    background-color: red;
 }
 
 .errorInput:focus {
 }
 
 .error {
+    display: block;
+  color: #cc0000;
+}
+.backgroundInput{
+    background-color: yellow;
+}
+.spanClassName{
+    width: 100%;
+    height: 15px;
+    background-color: #FFFFFF;
+    font-size: 10px;
 }

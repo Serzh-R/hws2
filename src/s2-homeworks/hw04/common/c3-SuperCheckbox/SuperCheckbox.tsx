@@ -14,7 +14,7 @@ type SuperCheckboxPropsType = Omit<DefaultInputPropsType, 'type'> & {
     spanClassName?: string
 }
 
-const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
+const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (      /* работает */
     {
         onChange,
         onChangeChecked,
@@ -27,15 +27,16 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
     }
 ) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        // задачка на написание онченджа
+        onChange?.(e)   /*   работает  */
 
+        onChangeChecked?.(e.currentTarget.checked)
     }
 
     const finalInputClassName = s.checkbox
         + (className ? ' ' + className : '')
 
     return (
-        <label className={s.label}>
+        <label className={s.label} >
             <input
                 id={id}
                 type={'checkbox'}

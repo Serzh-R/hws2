@@ -21,3 +21,20 @@
     flex-direction: column;
     gap: 36px;
 }
+
+.backgroundInput{
+    background-color: yellow;
+}
+.spanClassName{
+    width: 100%;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.buttonClassName{
+    border-radius: 10px;
+}
+
+
