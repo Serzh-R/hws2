@@ -9,3 +9,8 @@
     height: calc(100vh - var(--header_height));
     justify-content: center;
 }
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}

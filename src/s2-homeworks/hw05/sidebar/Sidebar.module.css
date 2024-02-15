@@ -1,25 +1,56 @@
 .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    display: none;
+    background-color: #fff;
+    height: 100%;
 }
 
 .sidebar.open {
+    display: block;
 }
 
 .background {
+    background-color: #fff;
 }
 
 .nav {
+
 }
 
 .nav a {
+    color: #282c34;
+    text-decoration: none;
+    font-size: 22px;
+    margin-top: 50px;
+    display: block;
 }
+
+
 
 .nav a:hover {
 }
 
-.nav a.active {
+.navLink{
+
 }
+
+.nav a.active {
+    color: #0059B2;
+    text-decoration: underline;
+}
+
 .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+
 }
 
 .close img {
+    width: 100%;
 }

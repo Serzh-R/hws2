@@ -2,9 +2,10 @@
     --header_height: 60px;
     min-height: 100vh;
     text-align: center;
-    background-color: #212A34;
+    background-color: #346745;
     color: #FFFFFF;
     font-family:  Montserrat;
+    position: relative;
 }
 
 .hw {
@@ -16,11 +17,6 @@
     font-size: 80px;
     padding-top: 100px;
     margin-bottom: 10px;
-}
-
-.container{
-    max-width: 1140px;
-    margin: 0 auto;
 }
 
 .container .hwTitle{
