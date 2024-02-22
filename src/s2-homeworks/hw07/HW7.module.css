@@ -1,2 +1,9 @@
 .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.title{
+    margin-bottom: 100px;
 }
