@@ -1,5 +1,38 @@
 .buttonsContainer {
+    text-align: left;
+    display: flex;
+    gap: 20px;
+}
+
+.buttonsContainer button{
+    padding: 5px 24px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    border-radius: 3px;
+}
+
+.save{
+    background-color: #0066CC;
+}
+
+.restore{
+    background-color: #fff;
+    border: 1px solid #0066CC;
+    color: #0066CC;
 }
 
 .editableSpanContainer {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.title{
+    margin-bottom: 100px;
 }

@@ -18,13 +18,14 @@ const HW6 = () => {
         saveState<string>('hw6-editable-span-value', value)
     }
     const restore = () => {
-        // делают студенты
-
+        const restoredValue = restoreState<string>('hw6-editable-span-value', ''); // восстановить значение из localStorage
+        setValue(restoredValue); // установить восстановленное значение в state
     }
 
+
     return (
-        <div id={'hw6'}>
-            <div className={s2.hwTitle}>Homework #6</div>
+        <div id={'hw6'} className={s.container}>
+            <div className={`${s2.hwTitle} ${s.title}`}>Homework #6</div>
 
             {/*демонстрация возможностей компоненты:*/}
             <div className={s2.hw}>
@@ -41,13 +42,18 @@ const HW6 = () => {
                 </div>
 
                 <div className={s.buttonsContainer}>
-                    <SuperButton id={'hw6-save'} onClick={save}>
+                    <SuperButton
+                        id={'hw6-save'}
+                        onClick={save}
+                        className={s.save}
+                    >
                         Save to ls
                     </SuperButton>
                     <SuperButton
                         id={'hw6-restore'}
                         onClick={restore}
                         xType={'secondary'}
+                        className={s.restore}
                     >
                         Get from ls
                     </SuperButton>
