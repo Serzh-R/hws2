@@ -5,9 +5,11 @@
 }
 
 .users {
+    width: 100%;
 }
 
 .buttonsContainer {
+    margin-bottom: 30px;
 }
 
 .container {
@@ -17,10 +19,13 @@
 }
 
 .thead {
+    color: #0059b2;
 }
 
 .nameCol {
+
 }
 
 .ageCol {
+
 }
