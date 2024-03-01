@@ -75,7 +75,7 @@ function Clock() {
                     {show ? (
                         <>
                             <span id={'hw9-month'}>{date.toLocaleDateString('en-US', { month: 'long' })}</span>,{' '}
-                            <span id={'hw9-date'}>{date.toLocaleDateString()}</span>
+                            <span id={'hw9-date'}>{date.toLocaleDateString('ru-Ru', { day: '2-digit', month: '2-digit', year: 'numeric' })}</span>
                         </>
                     ) : (
                         <>
