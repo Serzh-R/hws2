@@ -28,9 +28,15 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
                                                          ...restProps
                                                      }) => {
 
+// Тип для элемента массива options
+    type MappedOptionType = React.ReactNode;
+
+// Тип для массива options
+    type MappedOptionsType = MappedOptionType[];
 
 
     const mappedOptions: any[] = options
+    /*const mappedOptions: MappedOptionsType = options*/
         ? options.map((o) => (
             <option
                 id={'hw7-option-' + o.id}
