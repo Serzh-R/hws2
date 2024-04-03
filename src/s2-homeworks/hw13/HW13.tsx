@@ -52,6 +52,7 @@ const HW13 = () => {
         setImage('')
         setText('')
         setInfo('...loading')
+        setIsDisabled(true)
 
         axios
             .post(url, {success: x})
