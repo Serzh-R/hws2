@@ -88,7 +88,6 @@ const HW13 = () => {
                         id={'hw13-send-true'}
                         onClick={send(true)}
                         xType={'secondary'}
-                        // дописать
                         disabled={isDisabled}
                     >
                         Send true
@@ -97,7 +96,6 @@ const HW13 = () => {
                         id={'hw13-send-false'}
                         onClick={send(false)}
                         xType={'secondary'}
-                        // дописать
                         disabled={isDisabled}
                     >
                         Send false
