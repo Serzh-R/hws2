@@ -22,7 +22,14 @@ const HW13 = () => {
     const [isDisabled, setIsDisabled] = useState(false)
 
 
-    const send = (x?: boolean | undefined | null) => () => {
+    const send = (x?: boolean | null) => () => {
+
+        setCode('')
+        setImage('')
+        setText('')
+        setInfo('...loading')
+        setIsDisabled(true)
+
 
         let imageSrc: string;
         switch (x) {
@@ -37,6 +44,9 @@ const HW13 = () => {
                 break;
             case null:
                 imageSrc = errorUnknown;
+                setCode('Error!')
+                setText('Network Error')
+                setInfo('AxiosError')
                 break;
             default:
                 break;
@@ -48,34 +58,24 @@ const HW13 = () => {
                 ? 'https://xxxxxx.ccc' // имитация запроса на не корректный адрес
                 : 'https://samurai.it-incubator.io/api/3.0/homework/test'
 
-        setCode('')
-        setImage('')
-        setText('')
-        setInfo('...loading')
-        setIsDisabled(true)
 
         axios
             .post(url, {success: x})
             .then((res) => {
                 setImage(imageSrc);
-                setText('Ответ сервера: ' + res.data.info);
+                setText(res.data.errorText);
+                setInfo(res.data.info)
                 setCode('Код 200!');
-
             })
             .catch((e) => {
                     setImage(imageSrc);
-                    if (e.response) {
-                        setText('Ошибка: ' + e.response.data.error);
-                        setCode('Код ' + e.response.status);
-                    } else {
-                        setText('Ошибка: ' + e.message);
-                        setCode('Ошибка сети или сервера');
-                    }
+                    setText(e.response.data.errorText);
+                    setInfo(e.response.data.info)
+                    setCode('Ошибка ' + e.response.status + '!');
                 }
             )
             .finally(() => {
                 setIsDisabled(false)
-                setInfo('')
             })
     }
 

@@ -13,7 +13,9 @@
 .image {
 }
 
-.textContainer{
+.textContainer {
+    display: flex;
+    flex-direction: column;
 }
 
 .code {
@@ -21,5 +23,6 @@
 
 .text {
 }
+
 .info {
 }
