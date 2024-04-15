@@ -54,6 +54,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
         const value = parseInt(e.target.value);
         if (!isNaN(value)) {
             onChangeOption?.(value);
+            onChange?.(e)
         }
     }
 
